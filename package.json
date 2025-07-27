@@ -1,0 +1,41 @@
+{
+  "name": "farcaster-dev-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Farcaster Mini App development with tools and knowledge base",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "echo 'TypeScript compilation serves as linting'",
+    "format": "prettier --write src"
+  },
+  "keywords": [
+    "mcp",
+    "farcaster",
+    "mini-apps",
+    "development",
+    "tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

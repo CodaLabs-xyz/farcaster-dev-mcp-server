@@ -39,12 +39,26 @@ npm run dev
 
 ### MCP Client Setup
 
+#### Using Claude MCP CLI (Recommended)
+
+Add the server locally:
+```bash
+claude mcp add farcaster-dev-mcp-server node /Users/osx/Projects/MCP-SERVERS/farcaster-dev-mcp-server/dist/index.js
+```
+
+Or add globally for all users:
+```bash
+claude mcp add farcaster-dev-mcp-server -s user node /Users/osx/Projects/MCP-SERVERS/farcaster-dev-mcp-server/dist/index.js
+```
+
+#### Manual Configuration
+
 Add the server to your MCP client configuration:
 
 ```json
 {
   "mcpServers": {
-    "farcaster-dev": {
+    "farcaster-dev-mcp-server": {
       "command": "node",
       "args": ["./dist/index.js"],
       "cwd": "./farcaster-dev-mcp-server"
